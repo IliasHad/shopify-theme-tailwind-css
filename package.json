@@ -1,0 +1,19 @@
+{
+  "name": "shopify-theme-tailwindcss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:css": "postcss src/index.css -o assets/tailwind.css",
+    "start":"npm run start:css && theme deploy && theme watch ",
+    "build":"NODE_ENV=production npm run start:css && theme deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.1.1"
+  }
+}
